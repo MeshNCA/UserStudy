@@ -1,0 +1,1359 @@
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<section class="container" id="ImageAorB"><!-- Instructions -->
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-primary">
+                <!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a
+                    class="panel-heading" href="javascript:void(0);"
+                    style="color:#fff; display: block; text-decoration: none;"><strong>In each row, pick the image that
+                is most similar to the target?</strong> </a>
+                <div class="panel-body" id="instructionBody"><!-- Add instruction body content here -->
+                    <p>There are 40&nbsp;rows in this HIT. In each row, you will see one image representing the target
+                        style and four other
+                        images showing stylized 3D objects.</p>
+
+                    <p>For each row, you should <strong style="color:green;"> choose the image that better represents
+                        style of the target
+                        image both in terms of color and structure.</strong></p>
+
+
+                    <p><b>Estimated Time for Completion: 10 min</b></p>
+
+                    <p>Things to note:</p>
+
+                    <ul>
+
+                        <li>There will be multiple batches with multiple versions&nbsp;of this HIT. <strong
+                                style="color:red;">All your
+                            submission will be rejected if you complete/submit/start more than one HIT</strong>.
+                        </li>
+                        <li>
+                            <p style="color:red;"><strong>Your submission may be rejected if you make a mistake in an
+                                obvious case.&nbsp;</strong></p>
+                        </li>
+                        <li>
+                            <p style="color:red;"><strong>Your submission may&nbsp;be rejected if you&nbsp;submit an
+                                incomplete HIT.</strong></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-12">
+            <div class="panel panel-primary"><a class="panel-heading" href="javascript:void(0);"
+                                                id="collapseTrigger"><strong>Contact information</strong> <span
+                    class="collapse-text">(Click to expand)</span> </a>
+
+                <div class="panel-body" id="contactInfoBody"><img
+                        src="https://www.epfl.ch/about/overview/wp-content/uploads/2020/07/logo-epfl-1024x576.png"
+                        width="40%"/><img
+                        src="https://www.epfl.ch/labs/ivrl/wp-content/uploads/2019/05/IVRL_logo-600dpi-150x150.png"/><br/>
+                    <strong>Requester:</strong> Ehsan Pajouheshgar<br/>
+                    <b>Affiliation</b><strong>:</strong>&nbsp;<a href="https://www.epfl.ch/en/">EPFL University</a>
+                    (Lausanne, Switzerland)<br/>
+                    <strong>Department:</strong> <a href="https://www.epfl.ch/schools/ic/">School of Computer and
+                        Communication Sciences</a><br/>
+                    <strong>Lab:</strong>&nbsp;<a href="https://www.epfl.ch/labs/ivrl/">Image and Visual Representation
+                        Lab</a><br/>
+                    <strong>Preferred Email:</strong> <a
+                            href="mailto:ehsan.pajouheshgar@epfl.ch?subject=Mturk%20Video%20Comparison%20HIT%20Question">ehsan.pajouheshgar@epfl.ch</a><br/>
+                    <br/>
+                    It is recommended&nbsp;to save this information before submitting your HIT.&nbsp;If you have any
+                    issues or questions regarding this HIT, please do not hesitate to email me (include your worker ID
+                    and assignment ID, if necessary) and I will get back to you shortly.&nbsp;Thank you.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instructions -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.xmin.js"
+            integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url1}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question1" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question1" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question1" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question1" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url2}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question2" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question2" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question2" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question2" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url3}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question3" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question3" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question3" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question3" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url4}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question4" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question4" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question4" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question4" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url5}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question5" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question5" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question5" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question5" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url6}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question6" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question6" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question6" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question6" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url7}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question7" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question7" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question7" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question7" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url8}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question8" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question8" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question8" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question8" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url9}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question9" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question9" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question9" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question9" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url10}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question10" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question10" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question10" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question10" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url11}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question11" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question11" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question11" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question11" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url12}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question12" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question12" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question12" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question12" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url13}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question13" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question13" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question13" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question13" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url14}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question14" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question14" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question14" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question14" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url15}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question15" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question15" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question15" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question15" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url16}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question16" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question16" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question16" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question16" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url17}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question17" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question17" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question17" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question17" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url18}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question18" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question18" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question18" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question18" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url19}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question19" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question19" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question19" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question19" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url20}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question20" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question20" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question20" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question20" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url21}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question21" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question21" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question21" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question21" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url22}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question22" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question22" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question22" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question22" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url23}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question23" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question23" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question23" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question23" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url24}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question24" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question24" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question24" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question24" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url25}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question25" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question25" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question25" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question25" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url26}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question26" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question26" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question26" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question26" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url27}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question27" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question27" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question27" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question27" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url28}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question28" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question28" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question28" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question28" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url29}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question29" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question29" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question29" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question29" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url30}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question30" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question30" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question30" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question30" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url31}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question31" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question31" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question31" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question31" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url32}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question32" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question32" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question32" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question32" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url33}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question33" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question33" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question33" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question33" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url34}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question34" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question34" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question34" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question34" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url35}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question35" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question35" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question35" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question35" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url36}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question36" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question36" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question36" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question36" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url37}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question37" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question37" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question37" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question37" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url38}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question38" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question38" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question38" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question38" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url39}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question39" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question39" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question39" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question39" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url40}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question40" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question40" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question40" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question40" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url41}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question41" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question41" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question41" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question41" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url42}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question42" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question42" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question42" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question42" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url43}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question43" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question43" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question43" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question43" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url44}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question44" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question44" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question44" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question44" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url45}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question45" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question45" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question45" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question45" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url46}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question46" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question46" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question46" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question46" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url47}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question47" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question47" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question47" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question47" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
+    <div class="col-xs-12 col-md-12"><img src="${url48}" width="100%"/></div>
+    <div class="col-xs-12 col-md-12"><br></div>
+    <div class="form-group">
+        <label style="margin-left: 9em">
+            <input autocomplete="off" id="option1" name="question48" type="radio" value="option1" required="">
+            Option (1)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option2" name="question48" type="radio" value="option2">
+            Option (2)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option3" name="question48" type="radio" value="option3">
+            Option (3)
+        </label>
+        <label style="margin-left: 14em">
+            <input autocomplete="off" id="option4" name="question48" type="radio" value="option4">
+            Option (4)
+        </label>
+    </div>
+</div>
+
+
+    <!-- OUTPUT_TIMED.TXT CONTENT ENDS HERE --></section>
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet"/>
+<style type="text/css">#collapseTrigger {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#submitButton {
+    white-space: normal;
+}
+
+input.img-options {
+    margin: 3px 10px 5px 8px;
+}
+
+.img-check {
+    padding: 0;
+}
+
+.img-label {
+    padding: 6px 6px 0 6px;
+    min-width: 300px;
+    display: block;
+}
+
+.img-wrap {
+    background: transparent;
+    display: block;
+}
+
+.img-background {
+    background: #5cb85c;
+}
+
+.img-btn {
+    padding: 0;
+    display: block;
+}
+
+.row {
+    border-bottom: 2px #428bca solid;
+    margin-bottom: 25px;
+}
+</style>
+<p class="text-center"><input class="btn btn-primary" id="submitButton" type="submit"
+                              value="You must complete the HIT before submitting"/></p>
+<!--<p class="text-center"><input class="btn btn-primary" disabled="true" id="submitButton" type="submit"-->
+<!--                              value="You must complete the HIT before submitting"/></p>-->
+
+
+<script>
+    $(document).ready(function (e) {
+        // Instructions expand/collapse
+        var content = $('#contactInfoBody');
+        var trigger = $('#collapseTrigger');
+        content.hide();
+        $('.collapse-text').text('(Click to expand)');
+        trigger.click(function () {
+            content.toggle();
+            var isVisible = content.is(':visible');
+            if (isVisible) {
+                $('.collapse-text').text('(Click to collapse)');
+            } else {
+                $('.collapse-text').text('(Click to expand)');
+            }
+        });
+        // end expand/collapse
+        // Highlight selection
+        var imageBackgroundSelector = ".img-wrap";
+        var imageBackgroundElement = $(imageBackgroundSelector);
+        // $("#ImageAorB input:radio").click(function () {
+        //     imageBackgroundElement.removeClass("img-background");
+        //     if ($(this).is(':checked')) {
+        //         $(this).parent().siblings(imageBackgroundSelector).addClass("img-background");
+        //     } else {
+        //         $(this).parent().siblings(imageBackgroundSelector).remove("img-background");
+        //     }
+        // });
+        // end highlight selection
+    });
+</script>
