@@ -6,6 +6,7 @@ import random
 
 base_path = "image_gen_compare"
 h, w = 256, 256
+gray_level = 255
 def concatenate_images(images, margin=10):
     # Load images
     pil_images = [Image.open(f"{base_path}/{img_name}").resize((h, w)) for img_name in images]
@@ -15,7 +16,7 @@ def concatenate_images(images, margin=10):
     max_height = max(img.height for img in pil_images)
 
     # Create a blank image with the calculated dimensions
-    concatenated_image = Image.new("RGB", (total_width, max_height + 50), (255, 255, 255))
+    concatenated_image = Image.new("RGB", (total_width, max_height + 50), (gray_level, gray_level, gray_level))
 
     # Paste each image onto the blank image
     current_x = 0
@@ -47,10 +48,10 @@ def create_question(target_texture, target_mesh, methods):
     total_width = option_images.width
     total_height = target_style_img.height + option_images.height + 10
 
-    final_image = Image.new("RGB", (total_width, total_height), (255, 255, 255))
+    final_image = Image.new("RGB", (total_width, total_height), (gray_level, gray_level, gray_level))
     final_image.paste(option_images, (0, target_style_img.height + 10))
 
-    final_image.paste(target_style_img, (388 + 64, 10))
+    final_image.paste(target_style_img, (420 + 64, 10))
 
     draw = ImageDraw.Draw(final_image)
     # font = ImageFont.load_default()
@@ -59,7 +60,7 @@ def create_question(target_texture, target_mesh, methods):
     font_size = 34  # Adjust the font size as needed
     font = ImageFont.truetype(font_path, font_size)
 
-    draw.text((180 + 64, target_style_img.height // 2), "Target Style:", font=font, fill=(0, 0, 0))
+    draw.text((165 + 64, target_style_img.height // 2), "Reference Style:", font=font, fill=(0, 0, 0))
 
     return final_image
 

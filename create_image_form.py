@@ -1,5 +1,6 @@
 row = '''
 <div class="row">
+    <p style="text-align: center; color: black;"><strong>Question i/40</strong></p>
     <div class="form-group"><p style="text-align: center; color: black;"><strong>${question}</strong></p></div>
     <div class="col-xs-12 col-md-12"><img src="${urli}" width="100%"/></div>
     <div class="col-xs-12 col-md-12"><br></div>
@@ -24,5 +25,5 @@ row = '''
 </div>
 '''
 
-for i in range(1, 49):
-    print(row.replace("urli", f"url{i}").replace("questioni", f"question{i}"))
+for i in range(1, 41):
+    print(row.replace("urli", f"url{i}").replace("questioni", f"question{i}").replace("Question i/40", f"Question {i}/40"))
