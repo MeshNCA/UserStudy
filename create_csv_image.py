@@ -21,9 +21,9 @@ def create_row(id):
 
     selected_options = np.random.choice(options, num_questions, False)
     urls = [f"{base_url}/{s}.png" for s in selected_options]
-    urls[5] = "p12_armor"
-    urls[21] = "p14_mobius"
-    urls[33] = "p6_springer"
+    urls[5] = f"{base_url}/p12_armor.png" # 2
+    urls[21] = f"{base_url}/p14_mobius.png" # 1
+    urls[33] = f"{base_url}/p6_springer.png" # 2
 
     row = [exp_id, question] + urls
 
