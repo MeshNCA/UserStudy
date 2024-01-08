@@ -31,10 +31,10 @@ def create_row(id):
     selected_options = np.random.choice(options, num_questions - 4, False)
     urls = [f"{base_url}/{s}.png" for s in selected_options]
 
-    urls.insert(4, f"{base_url}/moss_bunny.png")  # option 1
-    urls.insert(15, f"{base_url}/feathers_alien.png")  # option 3
-    urls.insert(25, f"{base_url}/stained glass_chair.png")  # not option 1
-    urls.insert(33, f"{base_url}/bark_bunny.png")  # option 2
+    urls.insert(9, f"{base_url}/moss_bunny.png")  # option 1
+    urls.insert(21, f"{base_url}/feathers_alien.png")  # option 3
+    urls.insert(30, f"{base_url}/stained glass_chair.png")  # not option 1
+    urls.insert(43, f"{base_url}/bark_bunny.png")  # option 2
 
     # urls[5] = f"{base_url}/p12_armor.png" # 2
     # urls[21] = f"{base_url}/p14_mobius.png" # 1
